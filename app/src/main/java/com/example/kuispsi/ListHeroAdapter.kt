@@ -22,8 +22,8 @@ class ListHeroAdapter(private val listHero:ArrayList<Hero>,private val onItemCli
         holder.tvDetail.text = description
 
         holder.imgPhoto.setOnClickListener{
-//            onItemClickListener.onItemClicked(listHero[position])
-            Toast.makeText(holder.itemView.context, listHero[position].name, Toast.LENGTH_SHORT).show()
+            onItemClickListener.onItemClicked(listHero[position])
+//            Toast.makeText(holder.itemView.context, listHero[position].name, Toast.LENGTH_SHORT).show()
         }
     }
 
